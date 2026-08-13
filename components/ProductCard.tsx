@@ -9,8 +9,8 @@ import { useCart } from "./CartProvider";
 const badgeColors: Record<string, string> = {
   toys: "bg-turquoise",
   clothing: "bg-bubblegum",
-  books: "bg-sunshine",
-  birthday: "bg-coral",
+  books: "bg-sky",
+  birthday: "bg-grape",
 };
 
 export default function ProductCard({ product }: { product: Product }) {

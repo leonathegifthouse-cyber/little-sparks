@@ -3,11 +3,24 @@
 @tailwind utilities;
 
 body {
-  background-color: #FFFBF2;
+  background-color: #FFFCF5;
   background-image:
-    radial-gradient(circle at 8% 15%, rgba(255, 200, 87, 0.35) 0, transparent 8%),
-    radial-gradient(circle at 92% 25%, rgba(46, 196, 182, 0.30) 0, transparent 9%),
-    radial-gradient(circle at 20% 85%, rgba(255, 107, 157, 0.25) 0, transparent 7%),
-    radial-gradient(circle at 80% 90%, rgba(255, 107, 74, 0.25) 0, transparent 8%);
+    radial-gradient(circle at 6% 12%, rgba(255, 210, 63, 0.45) 0, transparent 9%),
+    radial-gradient(circle at 92% 20%, rgba(0, 207, 193, 0.4) 0, transparent 10%),
+    radial-gradient(circle at 15% 82%, rgba(255, 95, 162, 0.35) 0, transparent 8%),
+    radial-gradient(circle at 85% 88%, rgba(255, 92, 92, 0.35) 0, transparent 9%),
+    radial-gradient(circle at 45% 6%, rgba(142, 92, 255, 0.3) 0, transparent 7%),
+    radial-gradient(circle at 60% 95%, rgba(63, 198, 255, 0.3) 0, transparent 8%),
+    radial-gradient(circle at 25% 45%, rgba(156, 224, 31, 0.22) 0, transparent 6%),
+    radial-gradient(circle at 75% 55%, rgba(255, 210, 63, 0.25) 0, transparent 6%);
   background-attachment: fixed;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.wiggle-on-hover:hover {
+  animation: wiggle 0.4s ease-in-out infinite;
 }

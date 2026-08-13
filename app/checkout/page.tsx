@@ -44,7 +44,7 @@ export default function CheckoutPage() {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: orderData.amount,
         currency: "INR",
-        name: "Little Sparks",
+        name: "Leona",
         description: "Kids' gifts order",
         order_id: orderData.razorpay_order_id,
         prefill: { name: form.name, email: form.email, contact: form.phone },

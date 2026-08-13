@@ -8,21 +8,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#FFFBF2",
-        ink: "#2B2250",
+        cream: "#FFFCF5",
+        ink: "#241C4A",
         coral: {
-          DEFAULT: "#FF6B4A",
-          dark: "#E85535",
+          DEFAULT: "#FF5C5C",
+          dark: "#E63E3E",
         },
         turquoise: {
-          DEFAULT: "#2EC4B6",
-          dark: "#22A093",
+          DEFAULT: "#00CFC1",
+          dark: "#00A79C",
         },
         sunshine: {
-          DEFAULT: "#FFC857",
-          dark: "#F0AE29",
+          DEFAULT: "#FFD23F",
+          dark: "#F5B700",
         },
-        bubblegum: "#FF6B9D",
+        bubblegum: "#FF5FA2",
+        grape: "#8E5CFF",
+        lime: "#9CE01F",
+        sky: "#3FC6FF",
       },
       fontFamily: {
         display: ["var(--font-baloo)", "system-ui", "sans-serif"],
