@@ -5,7 +5,7 @@ import type { Product } from "@/lib/types";
 import { formatINR } from "@/lib/types";
 import AddToCartButton from "./AddToCartButton";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic"; // always fetch fresh stock/price data, never statically exported at build time
 
 export default async function ProductPage({ params }: { params: { id: string } }) {
   const { data: product } = await supabase

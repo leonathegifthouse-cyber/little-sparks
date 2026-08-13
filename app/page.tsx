@@ -2,7 +2,7 @@ import { supabase } from "@/lib/supabase";
 import ProductCard from "@/components/ProductCard";
 import type { Product } from "@/lib/types";
 
-export const revalidate = 60; // re-fetch catalog at most once a minute
+export const dynamic = "force-dynamic"; // always fetch fresh catalog/stock data, never statically exported at build time
 
 export default async function HomePage({
   searchParams,
